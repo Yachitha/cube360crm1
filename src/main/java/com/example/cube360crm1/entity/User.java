@@ -12,17 +12,11 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "USER_ID")
     private Long crmUserId;
-    @Column(name = "USER_NAME")
     private String userName;
-    @Column(name = "USER_FIRST_NAME")
-    private String userFname;
-    @Column(name = "USER_LAST_NAME")
-    private String userLname;
-    @Column(name = "USER_PASSWORD")
-    private String password;
-    @Column(name = "USER_EMAIL")
+    private String userFirstname;
+    private String userLastname;
+    private String userPassword;
     private String userEmail;
 
 }
