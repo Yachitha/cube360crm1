@@ -10,7 +10,7 @@ import java.util.Date;
 @MappedSuperclass
 @Getter
 @Setter
-public abstract class AbstractEntity {
+public  class AbstractEntity {
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
     @Temporal(TemporalType.TIMESTAMP)
